@@ -60,21 +60,11 @@
 	pushInsteadOf = "git://gist.github.com/"
 	pushInsteadOf = "https://gist.github.com/"
 
-
-# Any GitHub repo with my username should be checked out r/w by default
-# http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-
-[url "git@github.com:paulirish/"]
-  insteadOf = "git://github.com/paulirish/"
+[url "git@github.com:brod-ie/"]
+  insteadOf = "git://github.com/brod-ie/"
 [help]
 	autocorrect = 1
 
 # push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
-
-
-
-[include]
-  # For username / github token / etc
-  path = ~/.gitconfig.local

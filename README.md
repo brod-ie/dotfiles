@@ -10,7 +10,7 @@
 * fork this to your own acct
 * clone that repo
 * read and run parts of `setup-a-new-machine.sh`
-* read and run `symlink-setup.sh` 
+* read and run `symlink-setup.sh`
   * git config needs attention, read the notes.
 * use it. yay!
 
@@ -85,7 +85,7 @@ Lastly, I use `open .` to open Finder from this path. (That's just available nor
 
 There will be items that don't belong to be committed to a git repo, because either 1) it shoudn't be the same across your machines or 2) it shouldn't be in a git repo. Kick it off like this:
 
-`touch ~/.extra && $EDITOR $_` 
+`touch ~/.extra && $EDITOR $_`
 
 I have some EXPORTS, my PATH construction, and a few aliases for ssh'ing into my servers in there.
 

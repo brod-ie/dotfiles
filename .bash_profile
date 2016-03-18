@@ -13,7 +13,7 @@ GRC=`which grc`
 if [ "$TERM" != dumb ] && [ -n "$GRC" ]
     then
         alias colourify="$GRC -es --colour=auto"
-        alias configure='colourify ./configure' 
+        alias configure='colourify ./configure'
         for app in {diff,make,gcc,g++,ping,traceroute}; do
             alias "$app"='colourify '$app
     done
@@ -45,13 +45,6 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 ##
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-
-# z beats cd most of the time.
-#   github.com/rupa/z
-source ~/code/z/z.sh
-
-
 
 ##
 ## Completion…
@@ -88,14 +81,10 @@ complete -W "NSGlobalDomain" defaults
 
 ##
 ## better `cd`'ing
-## 
+##
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
-
-
-
-
