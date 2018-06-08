@@ -1,5 +1,7 @@
 # Brodie's dotfiles
 
+![Screenshot.png](blob/master/Screenshot.png)
+
 ## Bash
 
 1. [Setup Dropbox](https://www.dropbox.com/help/desktop-web/download-dropbox)
