@@ -7,7 +7,6 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-
 alias rm="rm -i"
 
 # i <3 u cask
@@ -33,7 +32,7 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
-# ls options: F = put `/` after folders, h = byte unit suffixes, color! (even with piping to awk) 
+# ls options: F = put `/` after folders, h = byte unit suffixes, color! (even with piping to awk)
 alias ls='CLICOLOR_FORCE=1 gls -aFh ${colorflag}'
 
 # List ALL files (colorized() in long format, show permissions in octal
@@ -50,8 +49,6 @@ alias la="ls -l | awk '
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-
-
 # `cat` with beautiful colors. requires Pygments installed.
 # 							   sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
@@ -63,8 +60,6 @@ alias undopush="git push -f origin HEAD^:master"
 
 # git root
 alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
-
-
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
