@@ -7,6 +7,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias dropbox="cd ~/Dropbox"
+alias repos="cd ~/Dropbox/Repos"
+
 alias rm="rm -i"
 
 # i <3 u cask
