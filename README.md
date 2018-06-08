@@ -1,6 +1,6 @@
 # Brodie's dotfiles
 
-![Screenshot.png](blob/master/Screenshot.png)
+![Screenshot.png](Screenshot.png)
 
 ## Bash
 
