@@ -21,3 +21,6 @@ Thumbs.db
 
 # Compiled Python files
 *.pyc
+
+# SSH config
+config
