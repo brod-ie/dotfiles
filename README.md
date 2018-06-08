@@ -10,4 +10,4 @@
 
 ## SSH
 
-1. `cd ~/.ssh && ln -s ~/Dropbox/Repos/dotfiles/config .`
+1. `cd ~/.ssh && ln -s ~/Dropbox/Repos/dotfiles/config .` (N.B. for obvious reasons, this doesn't live here)
