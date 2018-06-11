@@ -1,19 +1,27 @@
-
 # Create a new directory and enter it
+
 function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
-# visual studio code. a la `subl`
-code () {
-    if [[ $# = 0 ]]
-    then
-        open -a "Atom"
-    else
-        [[ $1 = /* ]] && F="$1" || F="$PWD/${1#./}"
-        open -a "Atom" --args "$F"
-    fi
+# Open our Xcode project or workspace
+
+function xcode() {
+
+  proj=$(ls -d *.xcodeproj/ 2>/dev/null)
+	work=$(ls -d *.xcworkspace/ 2>/dev/null)
+
+	if [ -n "$work" ]; then
+    open -a Xcode "$work"
+  elif [ -n "$proj" ]; then
+    open -a Xcode "$proj"
+  else
+    echo "No Xcode project detected."
+  fi
+
 }
+
+# For our PS1, branch name
 
 git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
