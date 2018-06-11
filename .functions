@@ -4,7 +4,7 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
-# Open our Xcode project or workspace
+# Open the current Xcode project or workspace
 
 function xcode() {
 
