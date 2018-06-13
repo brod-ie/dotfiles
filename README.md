@@ -20,3 +20,9 @@
 1. `cd /usr/local/etc/nginx/ && ln -s ~/Dropbox/Repos/dotfiles/nginx/include/ .`
 1. `cd /usr/local/etc/php/7.2/php-fpm.d/ && rm -rf www.conf && ln -s ~/Dropbox/Repos/dotfiles/php/www.conf .`
 1. `sudo brew services restart nginx && sudo brew services start php70`
+
+# Download folder synchronisation
+
+1. `mv ~/Downloads/* ~/Documents/Downloads`
+1. `sudo rm -rf ~/Downloads/`
+1. `ln -s ~/Documents/Downloads ~/Downloads`
