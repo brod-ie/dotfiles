@@ -95,8 +95,10 @@ alias fs="stat -f \"%z bytes\""
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
-
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
 done
+
+# Fix Xcode permissions when changing localisation folders
+alias fixstrings="sudo xattr -cr ."
