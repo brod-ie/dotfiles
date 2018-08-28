@@ -21,7 +21,11 @@
 1. `cd /usr/local/etc/php/7.2/php-fpm.d/ && rm -rf www.conf && ln -s ~/Dropbox/Repos/dotfiles/php/www.conf .`
 1. `sudo brew services restart nginx && sudo brew services start php70`
 
-# Download folder synchronisation
+## Xcode
+
+1. `cd ~/Library/Developer/Xcode/UserData && ln -s ~/Dropbox/Repos/dotfiles/xcode/CodeSnippets . && ln -s ~/Dropbox/Repos/dotfiles/xcode/FontAndColorThemes . && ln -s ~/Dropbox/Repos/dotfiles/xcode/KeyBindings .`
+
+## Download folder synchronisation
 
 1. `mv ~/Downloads/* ~/Documents/Downloads`
 1. `sudo rm -rf ~/Downloads/`
