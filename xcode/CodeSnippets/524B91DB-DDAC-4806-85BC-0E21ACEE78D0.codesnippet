@@ -3,22 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark</string>
+	<string>extensionviewcontroller</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;# comment #&gt;</string>
+	<string>import UIKit
+
+extension &lt;# prefix #&gt;ViewController {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>87E10B53-C3E2-4E17-9E26-EDB710E643C0</string>
+	<string>524B91DB-DDAC-4806-85BC-0E21ACEE78D0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MARK</string>
+	<string>View Controller Extension</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

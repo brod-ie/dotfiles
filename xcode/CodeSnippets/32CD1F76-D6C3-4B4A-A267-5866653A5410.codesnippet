@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark</string>
+	<string>localisedstring</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;# comment #&gt;</string>
+	<string>String(format: "&lt;# key #&gt;".localized)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>87E10B53-C3E2-4E17-9E26-EDB710E643C0</string>
+	<string>32CD1F76-D6C3-4B4A-A267-5866653A5410</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MARK</string>
+	<string>Complex Localised String</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

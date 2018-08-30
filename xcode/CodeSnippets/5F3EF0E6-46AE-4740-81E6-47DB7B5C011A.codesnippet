@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>emptyvc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+import IQKeyboardManager
+
+class &lt;# prefix #&gt;ViewController: UIViewController {
+
+// MARK: - Initializer
+
+convenience init() {
+    self.init(nibName: "&lt;# prefix #&gt;View", bundle: nil)
+    
+}
+
+// MARK: - View Controller Delegates
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    config()
+}
+
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    // UIApplication.shared.isStatusBarHidden = true
+    IQKeyboardManager.shared().isEnabled = false
+}
+
+override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    
+    // UIApplication.shared.isStatusBarHidden = false
+    IQKeyboardManager.shared().isEnabled = true
+}
+
+// MARK: - Configs
+
+func config() {
+    
+}
+
+// MARK: - Actions
+
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5F3EF0E6-46AE-4740-81E6-47DB7B5C011A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Empty View Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

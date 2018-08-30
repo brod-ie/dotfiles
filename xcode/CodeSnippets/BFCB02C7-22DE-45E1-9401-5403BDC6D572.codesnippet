@@ -3,19 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mark</string>
+	<string>attributedhighlight</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;# comment #&gt;</string>
+	<string>let string = &lt;# string #&gt;
+let range = (string as NSString).range(of: &lt;# needle #&gt;.localized)
+
+let attributedString = NSMutableAttributedString(string: string)
+
+attributedString.addAttributes([
+.font: UIFont(name: "AvenirNext-&lt;# font variant #&gt;", size: &lt;# font size #&gt;)!,
+.foregroundColor: &lt;# text colour #&gt;
+], range: range)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>87E10B53-C3E2-4E17-9E26-EDB710E643C0</string>
+	<string>BFCB02C7-22DE-45E1-9401-5403BDC6D572</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>MARK</string>
+	<string>Highlight Text</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
