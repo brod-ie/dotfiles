@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>constraint</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var &lt;# name #&gt;Constraint: NSLayoutConstraint = {
+    return NSLayoutConstraint(item: &lt;# view #&gt;View, attribute: .height, relatedBy: .equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: 0)
+}()
+
+view.addConstraints([
+    &lt;# name #&gt;Constraint
+    ])
+
+NSLayoutConstraint.deactivate([&lt;# name #&gt;Constraint])
+NSLayoutConstraint.activate([&lt;# name #&gt;Constraint])</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3E8DA5EA-8630-4FD4-9BAB-AE490E216E5D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Programmatic Constraint</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
