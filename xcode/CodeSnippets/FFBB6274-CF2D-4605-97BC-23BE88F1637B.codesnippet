@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>emptyuiview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+class &lt;# name #&gt;View: UIView {
+    
+    @IBOutlet var view: &lt;# name #&gt;View!
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.frame = frame
+        Bundle.main.loadNibNamed("&lt;# name #&gt;View", owner: self, options: nil)
+        self.view.frame = frame
+        
+        self.addSubview(self.view)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FFBB6274-CF2D-4605-97BC-23BE88F1637B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Empty UIView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
