@@ -23,7 +23,7 @@
 
 ## Xcode
 
-1. `cd ~/Library/Developer/Xcode/UserData && ln -s ~/Dropbox/Repos/dotfiles/xcode/CodeSnippets . && ln -s ~/Dropbox/Repos/dotfiles/xcode/FontAndColorThemes . && ln -s ~/Dropbox/Repos/dotfiles/xcode/KeyBindings .`
+1. `cd ~/Library/Developer/Xcode/UserData && rm -rf CodeSnippets && rm -rf FontAndColorThemes && rm -rf KeyBindings && ln -s ~/Dropbox/Repos/dotfiles/xcode/CodeSnippets . && ln -s ~/Dropbox/Repos/dotfiles/xcode/FontAndColorThemes . && ln -s ~/Dropbox/Repos/dotfiles/xcode/KeyBindings .`
 
 ## Download folder synchronisation
 
