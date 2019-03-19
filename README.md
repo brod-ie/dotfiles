@@ -12,6 +12,10 @@
 
 1. `cd ~/.ssh && ln -s ~/Dropbox/Repos/dotfiles/ssh/config .` (N.B. for obvious reasons, this doesn't live here)
 
+## Sublime Text
+
+1. `cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages && rm -rf User && ln -s ~/Dropbox/repos/dotfiles/subl/User`
+
 ## NGINX and PHP
 
 1. `brew install nginx && brew install php70`
