@@ -8,9 +8,13 @@
 2. `cd ~ && ln -s ~/Dropbox/Repos/dotfiles/bash/.bash_profile . && ln -s ~/Dropbox/Repos/dotfiles/bash/.hushlogin .`
 3. [There is no step 3](https://www.youtube.com/watch?v=6uXJlX50Lj8).
 
-## SSH
+# macOS
 
-1. `cd ~/.ssh && ln -s ~/Dropbox/Repos/dotfiles/ssh/config .` (N.B. for obvious reasons, this doesn't live here)
+1. `dotfiles && ./macos/macosh.sh`
+
+## SSH Config
+
+1. `cd ~/.ssh && ln -s ~/Dropbox/Repos/dotfiles/ssh/config .` (N.B. for obvious reasons, this doesn't live here, nor do certs)
 
 ## Sublime Text
 
