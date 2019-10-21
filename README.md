@@ -18,6 +18,7 @@
 
 ## Sublime Text
 
+1. [Setup Sublime](https://download.sublimetext.com/Sublime%20Text%20Build%203211.dmg)
 1. `cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages && rm -rf User && ln -s ~/Dropbox/repos/dotfiles/subl/User`
 
 ## NGINX and PHP
@@ -32,9 +33,3 @@
 ## Xcode
 
 1. `cd ~/Library/Developer/Xcode/UserData && rm -rf CodeSnippets && rm -rf FontAndColorThemes && rm -rf KeyBindings && ln -s ~/Dropbox/Repos/dotfiles/xcode/CodeSnippets . && ln -s ~/Dropbox/Repos/dotfiles/xcode/FontAndColorThemes . && ln -s ~/Dropbox/Repos/dotfiles/xcode/KeyBindings .`
-
-## Download folder synchronisation
-
-1. `mv ~/Downloads/* ~/Documents/Downloads`
-1. `sudo rm -rf ~/Downloads/`
-1. `ln -s ~/Documents/Downloads ~/Downloads`
