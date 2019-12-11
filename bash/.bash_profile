@@ -1,8 +1,10 @@
+# Hide the ‘default interactive shell is now zsh’ message`
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Load our dotfiles like ~/.bash_prompt, etc…
 #   ~/.extra can be used for settings you don’t want to commit,
 #   Use it to configure your PATH, thus it being first in line.
-for file in ~/Dropbox/Repos/dotfiles/bash/.{aliases,bash_prompt,dircolours,exports,functions,inputrc}; do
+for file in ~/GitHub/dotfiles/bash/.{aliases,bash_prompt,dircolours,exports,functions,inputrc}; do
     [ -r "$file" ] && source "$file"
 done
 unset file

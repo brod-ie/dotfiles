@@ -50,7 +50,7 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
 # rm -rf ~/Library/Application Support/Dock/desktoppicture.db
 # sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
-# sudo ln -s ~/Dropbox/repos/dotfiles/macos/desktop.png /System/Library/CoreServices/DefaultDesktop.jpg
+# sudo ln -s ~/GitHub/dotfiles/macos/desktop.png /System/Library/CoreServices/DefaultDesktop.jpg
 # TODO: Not working
 
 ###############################################################################
