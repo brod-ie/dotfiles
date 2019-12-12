@@ -1,40 +1,46 @@
 # Brodie's dotfiles
 
-# macOS
-
 ![Screenshot.png](Screenshot.png)
-
-1. `dotfiles && ./macos/macosh.sh`
-1. `sudo shutdown -r now`
 
 ## Apps
 
-- [] [Download 1Password](https://apps.apple.com/gb/app/1password-7-password-manager/id1333542190?mt=12)
-- [] [Download Alfred](https://www.alfredapp.com)
-- [] [Download 1Blocker](https://apps.apple.com/gb/app/1blocker/id1107421413?mt=12)
-- [] [Download Due](https://apps.apple.com/gb/app/due-reminders-countdown-timers/id524373870?mt=12)
-- [] [Download Fantastical](https://apps.apple.com/gb/app/fantastical-2/id975937182?mt=12)
-- [] [Download WhatsApp](https://apps.apple.com/gb/app/whatsapp-desktop/id1147396723?mt=12)
-- [] [Download CARROT Weather](https://apps.apple.com/gb/app/carrot-weather/id993487541?mt=12)
-- [] [Download Amphetamine](https://apps.apple.com/gb/app/amphetamine/id937984704?mt=12)
-- [] [Download Bartender](https://www.macbartender.com)
-- [] [Download iStat Menu Bar](https://bjango.com/mac/istatmenus/)
-- [] [Download Sketch](https://www.sketch.com/get/)
-- [] [Download Notion](https://www.notion.so/desktop)
-- [] [Download Soulver](https://apps.apple.com/gb/app/soulver-2/id413965349?mt=12)
+### App Store
+
+- [ ] [Install 1Password](https://apps.apple.com/gb/app/1password-7-password-manager/id1333542190?mt=12)
+- [ ] [Install 1Blocker](https://apps.apple.com/gb/app/1blocker/id1107421413?mt=12)
+- [ ] [Install Due](https://apps.apple.com/gb/app/due-reminders-countdown-timers/id524373870?mt=12)
+- [ ] [Install Fantastical](https://apps.apple.com/gb/app/fantastical-2/id975937182?mt=12)
+- [ ] [Install WhatsApp](https://apps.apple.com/gb/app/whatsapp-desktop/id1147396723?mt=12)
+- [ ] [Install CARROT Weather](https://apps.apple.com/gb/app/carrot-weather/id993487541?mt=12)
+- [ ] [Install Amphetamine](https://apps.apple.com/gb/app/amphetamine/id937984704?mt=12)
+- [ ] [Install Soulver](https://apps.apple.com/gb/app/soulver-2/id413965349?mt=12)
+- [ ] [Install Unibox](https://apps.apple.com/gb/app/unibox/id702816521?mt=12)
+
+### External
+
+- [ ] [Download & Install GitHub](https://central.github.com/deployments/desktop/desktop/latest/darwin)
+- [ ] [Download & Install Alfred](https://www.alfredapp.com)
+- [ ] [Download & Install Bartender](https://www.macbartender.com)
+- [ ] [Download & Install iStat Menu Bar](https://bjango.com/mac/istatmenus/)
+- [ ] [Download & Install Notion](https://www.notion.so/desktop)
 
 ## Bash
 
-1. [Download GitHub](https://central.github.com/deployments/desktop/desktop/latest/darwin)
+1. `mkdir ~/GitHub/`
 1. [Clone this repo](x-github-client://openRepo/https://github.com/brod-ie/dotfiles) into `~/GitHub/`
 1. `cd ~ && ln -s ~/GitHub/dotfiles/bash/.bash_profile . && ln -s ~/GitHub/dotfiles/bash/.hushlogin .`
+
+## macOS
+
+1. `dotfiles && ./macos/macos.sh`
+1. `sudo shutdown -r now`
 
 ## Homebrew
 
 1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 1. `brew cask install brooklyn`
 
-## Download folder synchronisation
+## Download folder in iCloud Drive
 
 1. `mv ~/Downloads/* ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads`
 1. `sudo rm -rf ~/Downloads/`
