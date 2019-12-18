@@ -65,6 +65,10 @@
 1. `cd /usr/local/etc/php/7.2/php-fpm.d/ && rm -rf www.conf && ln -s ~/GitHub/dotfiles/php/www.conf .`
 1. `sudo brew services restart nginx && sudo brew services start php70`
 
+## MySQL
+
+1. [Follow this Gist](https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
+
 ## Xcode
 
 1. `cd ~/Library/Developer/Xcode/UserData && rm -rf CodeSnippets && rm -rf FontAndColorThemes && rm -rf KeyBindings && ln -s ~/GitHub/dotfiles/xcode/CodeSnippets . && ln -s ~/GitHub/dotfiles/xcode/FontAndColorThemes . && ln -s ~/GitHub/dotfiles/xcode/KeyBindings .`
