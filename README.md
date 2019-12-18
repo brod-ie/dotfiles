@@ -68,7 +68,7 @@
 
 ## MySQL
 
-1. [Follow this Gist](https://gist.github.com/nrollr/3f57fc15ded7dddddcc4e82fe137b58e)
+1. [Follow this Gist](https://gist.github.com/operatino/392614486ce4421063b9dece4dfe6c21)
 
 ## Xcode
 
