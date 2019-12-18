@@ -23,6 +23,7 @@
 - [ ] [Download & Install Bartender](https://www.macbartender.com)
 - [ ] [Download & Install iStat Menu Bar](https://bjango.com/mac/istatmenus/)
 - [ ] [Download & Install Notion](https://www.notion.so/desktop)
+- [ ] [Download & Install Sequel Pro](https://sequelpro.com/download)
 
 ## Bash
 
