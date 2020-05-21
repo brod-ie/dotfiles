@@ -15,15 +15,15 @@
 - [ ] [Install Amphetamine](https://apps.apple.com/gb/app/amphetamine/id937984704?mt=12)
 - [ ] [Install Soulver](https://apps.apple.com/gb/app/soulver-2/id413965349?mt=12)
 - [ ] [Install Unibox](https://apps.apple.com/gb/app/unibox/id702816521?mt=12)
+- [ ] [Install ToothFairy](https://apps.apple.com/gb/app/toothfairy/id1191449274?mt=12)
+- [ ] [Install Magnet](https://apps.apple.com/gb/app/magnet/id441258766?mt=12)
 
 ### External
 
 - [ ] [Download & Install GitHub](https://central.github.com/deployments/desktop/desktop/latest/darwin)
 - [ ] [Download & Install Alfred](https://www.alfredapp.com)
 - [ ] [Download & Install Bartender](https://www.macbartender.com)
-- [ ] [Download & Install iStat Menu Bar](https://bjango.com/mac/istatmenus/)
 - [ ] [Download & Install Notion](https://www.notion.so/desktop)
-- [ ] [Download & Install Sequel Pro](https://sequelpro.com/download)
 
 ## Bash
 
