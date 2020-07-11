@@ -12,6 +12,7 @@ alias dotfiles="repos && cd dotfiles"
 alias ios="repos && cd iOS"
 alias dashboard="repos && cd Dashboard"
 alias api="repos && cd API"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 
 alias rm="rm -i"
 
