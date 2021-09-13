@@ -1,5 +1,7 @@
 export EDITOR="Atom"
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # The top-most paths override here.
       PATH=/usr/local/bin
