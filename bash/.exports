@@ -2,16 +2,21 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export EDITOR="Atom"
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
 export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
+source $(brew --prefix nvm)/nvm.sh
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 # The top-most paths override here.
-      PATH=/usr/local/bin
+PATH=/usr/local/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/bin:/usr/sbin
 PATH=$PATH:/sbin
+PATH=$PATH:$ANDROID_HOME/emulator
+PATH=$PATH:$ANDROID_HOME/tools
+PATH=$PATH:$ANDROID_HOME/tools/bin
+PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$HOME/.fastlane/bin:$PATH
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+PATH=/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH
 export PATH
+
+nvm use default
