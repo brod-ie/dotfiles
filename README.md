@@ -6,22 +6,14 @@
 
 ### App Store
 
-- [ ] [Install 1Password](https://apps.apple.com/gb/app/1password-7-password-manager/id1333542190?mt=12)
 - [ ] [Install Due](https://apps.apple.com/gb/app/due-reminders-countdown-timers/id524373870?mt=12)
-- [ ] [Install WhatsApp](https://apps.apple.com/gb/app/whatsapp-desktop/id1147396723?mt=12)
 - [ ] [Install CARROT Weather](https://apps.apple.com/gb/app/carrot-weather/id993487541?mt=12)
 - [ ] [Install Amphetamine](https://apps.apple.com/gb/app/amphetamine/id937984704?mt=12)
 - [ ] [Install Magnet](https://apps.apple.com/gb/app/magnet/id441258766?mt=12)
-- [ ] [Install Fantastical](https://apps.apple.com/gb/app/fantastical-calendar-tasks/id975937182?mt=12)
 
 ### External
 
 - [ ] [Download & Install Xcode](https://xcodereleases.com)
-- [ ] [Download & Install Visual Studio Code](https://code.visualstudio.com/download)
-- [ ] [Download & Install GitHub](https://central.github.com/deployments/desktop/desktop/latest/darwin)
-- [ ] [Download & Install Alfred](https://www.alfredapp.com)
-- [ ] [Download & Install Sunsama](https://app.sunsama.com/desktop)
-- [ ] [Download & Install Notion](https://www.notion.so/desktop)
 
 ## Bash
 
