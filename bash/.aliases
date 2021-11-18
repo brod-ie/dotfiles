@@ -11,6 +11,7 @@ alias repos="cd ~/GitHub/"
 alias dotfiles="repos && cd dotfiles"
 alias mono="repos && cd mono"
 alias rn="mono && cd rn"
+alias fb="mono && cd firebase-functions"
 alias ios="rn && cd ios"
 
 alias rm="rm -i"
