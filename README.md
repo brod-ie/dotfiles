@@ -32,6 +32,10 @@
 1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 1. `brew uninstall --force ruby && brew uninstall --force node && brew update && brew bundle && mkdir ~/.nvm` (making use of [bundle](https://apple.stackexchange.com/a/256269/181634))
 
+## CocoaPods
+
+1. `gem install cocoapods-user-defined-build-types`
+
 ## Download folder in iCloud Drive
 
 1. `mv ~/Downloads/* /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads`
