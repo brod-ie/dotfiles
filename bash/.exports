@@ -16,7 +16,7 @@ PATH=$PATH:$ANDROID_HOME/tools
 PATH=$PATH:$ANDROID_HOME/tools/bin
 PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$HOME/.fastlane/bin:$PATH
-PATH=/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.0.0/bin:$PATH
+PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH
 
 nvm use default
