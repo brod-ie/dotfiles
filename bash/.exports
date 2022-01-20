@@ -19,4 +19,4 @@ PATH=$HOME/.fastlane/bin:$PATH
 PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH
 
-nvm use default
+nvm use
