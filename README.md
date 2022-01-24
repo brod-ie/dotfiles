@@ -10,6 +10,7 @@
 - [ ] [Install CARROT Weather](https://apps.apple.com/gb/app/carrot-weather/id993487541?mt=12)
 - [ ] [Install Amphetamine](https://apps.apple.com/gb/app/amphetamine/id937984704?mt=12)
 - [ ] [Install Magnet](https://apps.apple.com/gb/app/magnet/id441258766?mt=12)
+- [ ] [Install 1Blocker](https://apps.apple.com/gb/app/1blocker-ad-blocker-privacy/id1365531024)
 
 ### External
 
