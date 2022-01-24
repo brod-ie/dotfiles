@@ -40,19 +40,23 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-# Set a custom wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
-# all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
-# rm -rf ~/Library/Application Support/Dock/desktoppicture.db
-# sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
-# sudo ln -s ~/GitHub/dotfiles/macos/desktop.png /System/Library/CoreServices/DefaultDesktop.jpg
+# Set desktop to my favourite orange wallpaper
+sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "UPDATE data SET value='~/GitHub/dotfiles/macos/desktop.png';"
+
+# Set accent to orange
+defaults write AppleAccentColor -int 1
+
 # TODO: Not working
 
 ###############################################################################
-# MacBookPro Touch Bar                                                        #
+# Menu Bar                                                                    #
 ###############################################################################
 
-# Always display full control strip (ignoring App Controls)
-defaults write com.apple.touchbar.agent PresentationModeGlobal fullControlStrip
+# Flash clock time separators
+defaults write com.apple.menuextra.clock "FlashDateSeparators" -bool "false"
+
+# Set digital clock format
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\"" 
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
@@ -103,8 +107,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Screen                                                                      #
 ###############################################################################
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+# Save screenshots to downloads
+defaults write com.apple.screencapture location -string "${HOME}/Downloads"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -137,10 +141,11 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Automatically open a new Finder window when a volume is mounted
-defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
-defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+# Larger sidebar icons
+defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "3"
+
+# Save to disk by default
+defaults write NSGlobalDomain "NSDocumentSaveNewDocumentsToCloud" -bool "false" 
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
@@ -168,7 +173,14 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 	Privileges -bool true
 
 ###############################################################################
-# Dock, Dashboard, and hot corners                                            #
+# Xcode                                                                       #
+###############################################################################
+
+# Show build durations
+defaults write com.apple.dt.Xcode "ShowBuildOperationDuration" -bool "true"
+
+###############################################################################
+# Dock, Dashboard, Mission Control, and hot corners                           #
 ###############################################################################
 
 # Change minimize/maximize window effect
@@ -183,10 +195,22 @@ defaults write com.apple.dock show-process-indicators -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
 # the Dock to launch apps.
-#defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array
+
+# Only show active apps in dock
+defaults write com.apple.dock static-only -bool true
+
+# Position dock on right
+defaults write com.apple.dock "orientation" -string "right"
+
+# Set dock size
+defaults write com.apple.dock "tilesize" -int "64"
 
 # Show only open applications in the Dock
 #defaults write com.apple.dock static-only -bool true
+
+# Don't rearrange space automatically in Mission Control
+defaults write com.apple.dock "mru-spaces" -bool "false"
 
 # Speed up Mission Control animations
 defaults write com.apple.dock expose-animation-duration -float 0.1
@@ -200,11 +224,14 @@ defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
 
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+# Don't automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool false
 
 # Don't make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool false
+
+# Dark mode
+defaults write -g NSRequiresAquaSystemAppearance -bool true
 
 # Add a spacer to the left side of the Dock (where the applications are)
 #defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'

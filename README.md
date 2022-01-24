@@ -24,6 +24,8 @@
 
 ## macOS
 
+[List of macOS programmatically configurable options](https://macos-defaults.com).
+
 1. `dotfiles && ./macos/macos.sh`
 1. `sudo shutdown -r now`
 
