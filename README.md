@@ -35,6 +35,10 @@
 1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 1. `brew uninstall --force ruby && brew uninstall --force node && brew update && brew bundle && mkdir ~/.nvm` (making use of [bundle](https://apple.stackexchange.com/a/256269/181634))
 
+## Defaults
+
+1. `duti -s com.microsoft.VSCode json all && duti -s com.microsoft.VSCode svg all`
+
 ## Bundler
 
 1. `sudo gem install bundler`
