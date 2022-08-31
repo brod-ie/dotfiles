@@ -197,9 +197,6 @@ defaults write com.apple.dock show-process-indicators -bool true
 # the Dock to launch apps.
 defaults write com.apple.dock persistent-apps -array
 
-# Only show active apps in dock
-defaults write com.apple.dock static-only -bool true
-
 # Position dock on right
 defaults write com.apple.dock "orientation" -string "right"
 
