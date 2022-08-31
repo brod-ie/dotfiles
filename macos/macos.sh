@@ -52,11 +52,8 @@ defaults write AppleAccentColor -int 1
 # Menu Bar                                                                    #
 ###############################################################################
 
-# Flash clock time separators
-defaults write com.apple.menuextra.clock "FlashDateSeparators" -bool "false"
-
-# Set digital clock format
-defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\"" 
+# Analog clock
+defaults write com.apple.menuextra.clock IsAnalog -bool true
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
