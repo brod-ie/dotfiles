@@ -37,7 +37,7 @@ Login to GitHub
 Then clone this repo
  
 ```
-mkdir ~/GitHub/ && /opt/homebrew/bin/gh repo clone brod-ie/dotfiles ~/GitHub
+/opt/homebrew/bin/gh repo clone brod-ie/dotfiles ~/GitHub/dotfiles
 ```
 
 And symlink config files
