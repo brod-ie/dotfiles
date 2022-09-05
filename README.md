@@ -52,20 +52,18 @@ Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256
 brew bundle
 ```
 
-Finally, sync the ~/Downloads folder to iCloud
+Sync the ~/Downloads folder to iCloud
 
 ```
 sudo rm -rf ~/Downloads && sudo ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads ~/Downloads
 ```
 
-# Extras
+And finally configure macOS ([list of macOS programmatically configurable options](https://macos-defaults.com))
 
-## macOS Config
+```
+dotfiles && ./macos/macos.sh && sudo shutdown -r now
+```
 
-[List of macOS programmatically configurable options](https://macos-defaults.com).
-
-1. `dotfiles && ./macos/macos.sh`
-1. `sudo shutdown -r now`
 
 ## App Store
 
