@@ -30,8 +30,8 @@ open -a 1Password
 
 Login to GitHub
 
-``
-`/opt/homebrew/bin/gh auth login
+```
+/opt/homebrew/bin/gh auth login
 ```
 
 Then clone this repo
