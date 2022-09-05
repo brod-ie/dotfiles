@@ -6,39 +6,57 @@
 
 Change the Shell to Bash
 
-1. `chsh -s /bin/bash`
+```
+chsh -s /bin/bash
+```
 
 Install Homebrew
 
-1. `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 Then 1Password and the GitHub CLI
 
-1. `/opt/homebrew/bin/brew install --cask 1password && /opt/homebrew/bin/brew install gh`
+```
+/opt/homebrew/bin/brew install --cask 1password && /opt/homebrew/bin/brew install gh
+```
 
 Now configure 1Password
 
-1. `open -a 1Password`
+```
+open -a 1Password
+```
 
-So you can login to GitHub
+Login to GitHub
 
-1. `/opt/homebrew/bin/gh auth login`
+``
+`/opt/homebrew/bin/gh auth login
+```
 
 Then clone this repo
  
-1. `mkdir ~/GitHub/ && /opt/homebrew/bin/gh repo clone brod-ie/dotfiles ~/GitHub/`
+```
+mkdir ~/GitHub/ && /opt/homebrew/bin/gh repo clone brod-ie/dotfiles ~/GitHub/
+```
 
 And symlink config files
 
-1. `cd ~ && ln -s ~/GitHub/dotfiles/bash/.bash_profile . && ln -s ~/GitHub/dotfiles/bash/.hushlogin . && ln -s ~/GitHub/dotfiles/bash/.nvmrc . && ln -s ~/GitHub/dotfiles/bash/Brewfile .`
+```
+cd ~ && rm -rf .bash_profile && ln -s ~/GitHub/dotfiles/bash/.bash_profile . && ln -s ~/GitHub/dotfiles/bash/.hushlogin . && ln -s ~/GitHub/dotfiles/bash/.nvmrc . && ln -s ~/GitHub/dotfiles/bash/Brewfile .
+```
 
 Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256269/181634)
 
-1. `brew bundle`
+```
+brew bundle
+```
 
-Finally, sync your downloads folder to iCloud
+Finally, sync the ~/Downloads folder to iCloud
 
-1. `mv ~/Downloads/* /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads && sudo rm -rf ~/Downloads/ && ln -s /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads ~/Downloads`
+```
+mv ~/Downloads/* /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads && sudo rm -rf ~/Downloads/ && ln -s /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads ~/Downloads
+```
 
 # Extras
 
