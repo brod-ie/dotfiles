@@ -55,7 +55,7 @@ brew bundle
 Finally, sync the ~/Downloads folder to iCloud
 
 ```
-mv ~/Downloads/* /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads && sudo rm -rf ~/Downloads/ && ln -s /Users/brodie/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads ~/Downloads
+sudo rm -rf ~/Downloads && sudo ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads ~/Downloads
 ```
 
 # Extras
