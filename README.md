@@ -34,7 +34,7 @@ And symlink config files
 
 Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256269/181634)
 
-1. `brew uninstall --force ruby && brew uninstall --force node && brew update && brew bundle && mkdir ~/.nvm`
+1. `brew bundle`
 
 Finally, sync your downloads folder to iCloud
 
