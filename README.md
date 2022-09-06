@@ -10,7 +10,7 @@ Change the Shell to Bash
 chsh -s /bin/bash
 ```
 
-Install Homebrew
+And reopen Terminal. Now install Homebrew
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -43,7 +43,11 @@ Then clone this repo
 And symlink config files
 
 ```
-cd ~ && rm -rf .bash_profile && ln -s ~/GitHub/dotfiles/bash/.bash_profile . && ln -s ~/GitHub/dotfiles/bash/.hushlogin . && ln -s ~/GitHub/dotfiles/bash/.nvmrc . && ln -s ~/GitHub/dotfiles/bash/Brewfile .
+cd ~ && rm -rf .bash_profile && \
+ln -s ~/GitHub/dotfiles/bash/.bash_profile . && \
+ln -s ~/GitHub/dotfiles/bash/.hushlogin . && \
+ln -s ~/GitHub/dotfiles/bash/.nvmrc . && \
+ln -s ~/GitHub/dotfiles/bash/Brewfile .
 ```
 
 Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256269/181634)
@@ -52,10 +56,20 @@ Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256
 brew bundle
 ```
 
+Install apps that aren't on Homebrew, too, using [mas](https://github.com/mas-cli/mas)
+
+```
+mas install 524373870 && \
+mas install 1569813296 && \
+mas install 937984704 && \
+mas install 441258766
+```
+
 Sync the ~/Downloads folder to iCloud
 
 ```
-sudo rm -rf ~/Downloads && sudo ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads ~/Downloads
+sudo rm -rf ~/Downloads && \
+sudo ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads ~/Downloads
 ```
 
 And finally configure macOS ([list of macOS programmatically configurable options](https://macos-defaults.com))
@@ -63,10 +77,3 @@ And finally configure macOS ([list of macOS programmatically configurable option
 ```
 dotfiles && ./macos/macos.sh && sudo shutdown -r now
 ```
-
-
-## App Store
-
-- [ ] [Install Due](https://apps.apple.com/gb/app/due-reminders-countdown-timers/id524373870?m
-- [ ] [Install Amphetamine](https://apps.apple.com/gb/app/amphetamine/id937984704?mt=12)
-- [ ] [Install Magnet](https://apps.apple.com/gb/app/magnet/id441258766?mt=12)
