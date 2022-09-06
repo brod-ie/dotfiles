@@ -1,7 +1,6 @@
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/core'
-tap 'homebrew/cask-fonts'
 # brew 'nvm'
 # brew 'watchman'
 # brew 'libffi'
