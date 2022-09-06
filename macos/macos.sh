@@ -40,8 +40,8 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
-# Set desktop to my favourite orange wallpaper
-sqlite3 ~/Library/Application\ Support/Dock/desktoppicture.db "UPDATE data SET value='~/GitHub/dotfiles/macos/desktop.png';"
+# Set desktop to my favourite teal wallpaper
+osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Stone.png\" as POSIX file"
 
 # Set accent to orange
 defaults write AppleAccentColor -int 1
