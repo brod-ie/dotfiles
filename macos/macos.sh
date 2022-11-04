@@ -46,7 +46,8 @@ osascript -e "tell application \"System Events\" to tell every desktop to set pi
 # Set accent to orange
 defaults write AppleAccentColor -int 1
 
-# TODO: Not working
+# Set tracking speed to fastest
+defaults write -g com.apple.mouse.scaling -float 3.0
 
 ###############################################################################
 # Menu Bar                                                                    #
