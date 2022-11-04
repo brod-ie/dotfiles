@@ -7,13 +7,13 @@
 Change the Shell to Bash
 
 ```
-chsh -s /bin/bash
+chsh -s /bin/bash && exec bash
 ```
 
-And reopen Terminal. Now install Homebrew
+Now install Homebrew
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Then 1Password and the GitHub CLI
@@ -47,7 +47,8 @@ cd ~ && rm -rf .bash_profile && \
 ln -s ~/GitHub/dotfiles/bash/.bash_profile . && \
 ln -s ~/GitHub/dotfiles/bash/.hushlogin . && \
 ln -s ~/GitHub/dotfiles/bash/.nvmrc . && \
-ln -s ~/GitHub/dotfiles/bash/Brewfile .
+ln -s ~/GitHub/dotfiles/bash/Brewfile . && \
+exec bash
 ```
 
 Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256269/181634)
