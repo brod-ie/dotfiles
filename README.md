@@ -73,7 +73,13 @@ sudo rm -rf ~/Downloads && \
 sudo ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads ~/Downloads
 ```
 
-And finally configure macOS ([list of macOS programmatically configurable options](https://macos-defaults.com))
+Set our defaults
+
+```
+duti -s com.microsoft.VSCode json all && duti -s com.microsoft.VSCode svg all
+```
+
+And finally, configure macOS ([list of macOS programmatically configurable options](https://macos-defaults.com))
 
 ```
 dotfiles && ./macos/macos.sh && sudo shutdown -r now
