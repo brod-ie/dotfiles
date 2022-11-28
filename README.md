@@ -54,7 +54,7 @@ exec bash
 Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256269/181634)
 
 ```
-brew bundle
+brew uninstall --force ruby && brew uninstall --force node && brew update && brew bundle && mkdir ~/.nvm
 ```
 
 Install apps that aren't on Homebrew, too, using [mas](https://github.com/mas-cli/mas)
