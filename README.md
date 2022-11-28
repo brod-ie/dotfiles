@@ -79,6 +79,8 @@ Set our defaults
 duti -s com.microsoft.VSCode json all && duti -s com.microsoft.VSCode svg all
 ```
 
+[Turn on Settings Sync in Visual Studio Code](https://code.visualstudio.com/docs/editor/settings-sync)
+
 And finally, configure macOS ([list of macOS programmatically configurable options](https://macos-defaults.com))
 
 ```
