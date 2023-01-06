@@ -1,9 +1,27 @@
-export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
+export ANDROID_HOME=$HOME/Android/Sdk
 
 # The top-most paths override here.
 PATH=/usr/local/bin
+PATH=$PATH:$HOME/.fastlane/bin
+PATH=$PATH:$HOME/.rbenv/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/bin:/usr/sbin
 PATH=$PATH:/sbin
+PATH=$PATH:$ANDROID_HOME/emulator
+PATH=$PATH:$ANDROID_HOME/tools
+PATH=$PATH:$ANDROID_HOME/tools/bin
+PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:/opt/homebrew/bin
 export PATH
+
+
+export EDITOR="VSCode"
+export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+eval "nvm use 1> /dev/null"
+
+eval "$(rbenv init - bash)"

@@ -2,6 +2,8 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/core'
 tap 'homebrew/cask-fonts'
+tap 'lokalise/cli-2'
+
 brew 'nvm'
 brew 'watchman'
 brew 'libffi'
@@ -10,7 +12,6 @@ cask 'brooklyn'
 brew 'cocoapods'
 brew 'ruby'
 brew 'yarn'
-cask 'slack'
 cask 'slack'
 cask 'visual-studio-code'
 cask 'github'
@@ -35,3 +36,10 @@ brew 'sass'
 brew 'innoextract'
 brew 'openrct2'
 cask 'webex'
+brew 'lokalise2'
+brew 'rbenv'
+
+mas 'Due', id: 524373870
+mas 'Amphetamine', id: 937984704
+mas 'Magnet', id: 441258766
+mas 'Xcode', id: 497799835
