@@ -14,14 +14,16 @@ PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:/opt/homebrew/bin
 export PATH
 
-
 export EDITOR="VSCode"
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
+# Always start NVM to ensure correct version of Node/NPM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 eval "nvm use 1> /dev/null"
 
+# Always start RBENV to ensure correct version of Ruby and its bundler
 eval "$(rbenv init - bash)"
+eval "$(rbenv bundler on 1> /dev/null)"

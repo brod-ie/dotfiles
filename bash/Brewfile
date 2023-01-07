@@ -32,12 +32,12 @@ cask 'zoom'
 cask 'backblaze'
 cask 'sf-symbols'
 brew 'typescript'
-brew 'sass'
 brew 'innoextract'
 brew 'openrct2'
 cask 'webex'
 brew 'lokalise2'
 brew 'rbenv'
+brew 'rbenv-bundler'
 
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
