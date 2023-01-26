@@ -48,7 +48,7 @@ ln -s ~/GitHub/dotfiles/bash/.bash_profile . && \
 ln -s ~/GitHub/dotfiles/bash/.hushlogin . && \
 ln -s ~/GitHub/dotfiles/bash/.nvmrc . && \
 ln -s ~/GitHub/dotfiles/bash/Brewfile . && \
-exec bash
+bash -l
 ```
 
 Now linked, install making use of [bundle](https://apple.stackexchange.com/a/256269/181634)
