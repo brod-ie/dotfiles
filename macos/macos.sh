@@ -195,14 +195,11 @@ defaults write com.apple.dock show-process-indicators -bool true
 # the Dock to launch apps.
 defaults write com.apple.dock persistent-apps -array
 
-# Position dock on right
-defaults write com.apple.dock "orientation" -string "right"
+# Position dock on left
+defaults write com.apple.dock "orientation" -string "left"
 
 # Set dock size
 defaults write com.apple.dock "tilesize" -int "64"
-
-# Show only open applications in the Dock
-#defaults write com.apple.dock static-only -bool true
 
 # Don't rearrange space automatically in Mission Control
 defaults write com.apple.dock "mru-spaces" -bool "false"
@@ -219,14 +216,14 @@ defaults write com.apple.dock autohide-delay -float 0
 # Remove the animation when hiding/showing the Dock
 defaults write com.apple.dock autohide-time-modifier -float 0
 
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+# Don't automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool false
 
 # Don't make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool false
 
-# Dark mode
-defaults write -g NSRequiresAquaSystemAppearance -bool true
+# Don't show recents in the dock
+defaults write com.apple.dock "show-recents" -bool false
 
 # Add a spacer to the left side of the Dock (where the applications are)
 #defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
