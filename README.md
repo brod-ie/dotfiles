@@ -37,17 +37,17 @@ Login to GitHub
 Then clone this repo
 
 ```bash
-/opt/homebrew/bin/gh repo clone brod-ie/dotfiles ~/GitHub/dotfiles
+/opt/homebrew/bin/gh repo clone brod-ie/dotfiles ~/github/dotfiles
 ```
 
 And symlink config files
 
 ```bash
 cd ~ && rm -rf .bash_profile && \
-ln -s ~/GitHub/dotfiles/bash/.bash_profile . && \
-ln -s ~/GitHub/dotfiles/bash/.hushlogin . && \
-ln -s ~/GitHub/dotfiles/bash/.nvmrc . && \
-ln -s ~/GitHub/dotfiles/bash/Brewfile . && \
+ln -s ~/github/dotfiles/bash/.bash_profile . && \
+ln -s ~/github/dotfiles/bash/.hushlogin . && \
+ln -s ~/github/dotfiles/bash/.nvmrc . && \
+ln -s ~/github/dotfiles/bash/Brewfile . && \
 bash -l
 ```
 
