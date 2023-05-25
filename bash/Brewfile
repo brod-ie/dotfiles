@@ -19,8 +19,6 @@ cask 'alfred'
 cask 'notion'
 cask 'whatsapp'
 cask 'xscope'
-cask 'microsoft-office'
-cask 'microsoft-teams'
 cask 'spotify'
 brew 'duti'
 cask 'google-drive'
@@ -43,7 +41,9 @@ cask 'google-chrome'
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
 mas 'Magnet', id: 441258766
-mas 'Xcode', id: 497799835
 mas '1Password for Safari', id: 1569813296
 mas '1Blocker', id: 1365531024
 mas 'Dark Night', id: 1592844577
+mas 'Microsoft Word', 462054704
+mas 'Microsoft Excel', 462058435
+mas 'Xcode', id: 497799835
