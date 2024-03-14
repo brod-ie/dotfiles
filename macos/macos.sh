@@ -53,8 +53,8 @@ defaults write -g com.apple.mouse.scaling -float 3.0
 # Menu Bar                                                                    #
 ###############################################################################
 
-# Analog clock
-defaults write com.apple.menuextra.clock IsAnalog -bool true
+# Set menubar digital clock format
+defaults write com.apple.menuextra.clock "DateFormat" -string "\"EEE d MMM HH:mm:ss\""
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
