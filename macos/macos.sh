@@ -227,29 +227,37 @@ defaults write com.apple.dock "show-recents" -bool false
 
 # Hot corners
 # Possible values:
-#  0: no-op
-#  2: Mission Control
-#  3: Show application windows
-#  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
-#  7: Dashboard
+# 0: No action
+# 2: Mission Control
+# 3: Show application windows
+# 4: Desktop
+# 5: Start screen saver
+# 6: Disable screen saver
+# 7: Dashboard
 # 10: Put display to sleep
 # 11: Launchpad
 # 12: Notification Center
+# 13: Lock Screen
 
-# Top left screen corner → no-op
-defaults write com.apple.dock wvous-tl-corner -int 1
-defaults write com.apple.dock wvous-tl-modifier -int 1048576
-# Top right screen corner → no-op
-defaults write com.apple.dock wvous-tr-corner -int 1
-defaults write com.apple.dock wvous-tr-modifier -int 1048576
-# Bottom left screen corner → Start screen saver
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 1048576
-# Bottom right screen corner → no-op
-defaults write com.apple.dock wvous-br-corner -int 1
-defaults write com.apple.dock wvous-br-modifier -int 1048576
+# Set top left corner to no action
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tl-modifier -int 0
+
+# Set top right corner to Notification Center
+defaults write com.apple.dock wvous-tr-corner -int 12
+defaults write com.apple.dock wvous-tr-modifier -int 0
+
+# Set bottom left corner to Lock Screen
+defaults write com.apple.dock wvous-bl-corner -int 13
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
+# Set bottom right corner to Mission Control
+defaults write com.apple.dock wvous-br-corner -int 2
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+###############################################################################
+# Safari                                                                      #
+###############################################################################
 
 # Stop Safari opening last session after restart
 defaults write com.apple.Safari NSQuitAlwaysKeepsWindows -bool false
