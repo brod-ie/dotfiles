@@ -244,15 +244,15 @@ defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # Set top right corner to Notification Center
-defaults write com.apple.dock wvous-tr-corner -int 12
+defaults write com.apple.dock wvous-tr-corner -int 0
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
 # Set bottom left corner to Lock Screen
-defaults write com.apple.dock wvous-bl-corner -int 13
+defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Set bottom right corner to Mission Control
-defaults write com.apple.dock wvous-br-corner -int 2
+defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
