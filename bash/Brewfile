@@ -37,6 +37,7 @@ brew 'lokalise2'
 brew 'rbenv'
 brew 'rbenv-bundler'
 cask 'google-chrome'
+cask 'keyboardcleantool'
 
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
