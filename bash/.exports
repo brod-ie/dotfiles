@@ -1,7 +1,8 @@
 export ANDROID_HOME=$HOME/Android/Sdk
 
 # The top-most paths override here.
-PATH=/usr/local/bin
+PATH=~/.rbenv/shims
+PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/.fastlane/bin
 PATH=$PATH:$HOME/.rbenv/bin
 PATH=$PATH:/usr/bin

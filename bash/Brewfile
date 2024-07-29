@@ -38,6 +38,7 @@ brew 'rbenv'
 brew 'rbenv-bundler'
 cask 'google-chrome'
 cask 'keyboardcleantool'
+cask 'ark'
 
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
