@@ -2,19 +2,19 @@ tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/core'
 tap 'homebrew/cask-fonts'
-tap 'lokalise/cli-2'
+# tap 'lokalise/cli-2'
 
-brew 'nvm'
-brew 'watchman'
-brew 'libffi'
-brew 'lcdf-typetools'
+# brew 'nvm'
+# brew 'watchman'
+# brew 'libffi'
+# brew 'lcdf-typetools'
 cask 'brooklyn'
-brew 'cocoapods'
-brew 'ruby'
-brew 'yarn'
+# brew 'cocoapods'
+# brew 'ruby'
+# brew 'yarn'
 cask 'slack'
 cask 'visual-studio-code'
-cask 'github'
+# cask 'github'
 cask 'alfred'
 cask 'notion'
 cask 'whatsapp'
@@ -27,25 +27,22 @@ cask 'figma'
 cask 'font-sf-pro'
 cask 'font-manrope'
 cask 'zoom'
-cask 'backblaze'
 cask 'sf-symbols'
-brew 'typescript'
-brew 'innoextract'
+# brew 'typescript'
+# brew 'innoextract'
 brew 'openrct2'
 cask 'webex'
-brew 'lokalise2'
-brew 'rbenv'
-brew 'rbenv-bundler'
-cask 'google-chrome'
+# brew 'lokalise2'
+# brew 'rbenv'
+# brew 'rbenv-bundler'
 cask 'keyboardcleantool'
-cask 'ark'
 
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
 mas 'Magnet', id: 441258766
 mas '1Password for Safari', id: 1569813296
-mas '1Blocker', id: 1365531024
+mas 'AdBlock for Safari', id: 1402042596
 mas 'Dark Night', id: 1592844577
 mas 'Microsoft Word', 462054704
 mas 'Microsoft Excel', 462058435
-mas 'Xcode', id: 497799835
+# mas 'Xcode', id: 497799835
