@@ -36,6 +36,7 @@ cask 'webex'
 # brew 'rbenv'
 # brew 'rbenv-bundler'
 cask 'keyboardcleantool'
+cask 'textexpander'
 
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
