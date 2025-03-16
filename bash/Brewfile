@@ -1,7 +1,4 @@
 tap 'homebrew/bundle'
-tap 'homebrew/cask'
-tap 'homebrew/core'
-tap 'homebrew/cask-fonts'
 # tap 'lokalise/cli-2'
 
 # brew 'nvm'
@@ -38,14 +35,15 @@ cask 'webex'
 cask 'keyboardcleantool'
 cask 'front'
 cask 'google-chrome'
+cask 'chatgpt'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
 mas 'Magnet', id: 441258766
 mas '1Password for Safari', id: 1569813296
-mas 'AdBlock for Safari', id: 1402042596
+mas 'AdGuard for Safari', id: 1440147259
 mas 'Dark Night', id: 1592844577
-mas 'Microsoft Word', 462054704
-mas 'Microsoft Excel', 462058435
+mas 'Microsoft Word', id: 462054704
+mas 'Microsoft Excel', id: 462058435
 # mas 'Xcode', id: 497799835
