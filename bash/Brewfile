@@ -34,6 +34,7 @@ cask 'keyboardcleantool'
 cask 'front'
 cask 'google-chrome'
 cask 'chatgpt'
+cask 'claude'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
