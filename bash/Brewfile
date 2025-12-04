@@ -36,6 +36,7 @@ cask 'google-chrome'
 cask 'chatgpt'
 cask 'claude'
 cask 'icon-composer'
+brew 'firebase-cli'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
@@ -47,4 +48,4 @@ mas 'Dark Night', id: 1592844577
 mas 'Microsoft Word', id: 462054704
 mas 'Microsoft Excel', id: 462058435
 mas 'WhatsApp', id: 310633997
-# mas 'Xcode', id: 497799835
+mas 'Xcode', id: 497799835
