@@ -1,7 +1,8 @@
 export ANDROID_HOME=$HOME/Android/Sdk
 
 # The top-most paths override here.
-PATH=~/.rbenv/shims
+PATH=/opt/homebrew/bin
+PATH=$PATH:~/.rbenv/shims
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/.fastlane/bin
 PATH=$PATH:$HOME/.rbenv/bin
@@ -12,13 +13,13 @@ PATH=$PATH:$ANDROID_HOME/emulator
 PATH=$PATH:$ANDROID_HOME/tools
 PATH=$PATH:$ANDROID_HOME/tools/bin
 PATH=$PATH:$ANDROID_HOME/platform-tools
-PATH=$PATH:/opt/homebrew/bin
 export PATH
 
-export EDITOR="VSCode"
+export EDITOR="code -w"
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export CLOUDSDK_PYTHON=/opt/homebrew/opt/python@3.13/libexec/bin/python
 
 # Always start NVM to ensure correct version of Node/NPM
 export NVM_DIR=~/.nvm
