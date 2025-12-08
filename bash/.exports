@@ -6,6 +6,7 @@ PATH=$PATH:~/.rbenv/shims
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/.fastlane/bin
 PATH=$PATH:$HOME/.rbenv/bin
+PATH=$PATH:/opt/homebrew/opt/openjdk@11/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/bin:/usr/sbin
 PATH=$PATH:/sbin
