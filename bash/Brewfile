@@ -39,6 +39,7 @@ cask 'icon-composer'
 brew 'firebase-cli'
 cask 'google-cloud-sdk'
 brew 'openjdk@11'
+cask 'ngrok'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
