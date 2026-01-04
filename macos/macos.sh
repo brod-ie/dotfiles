@@ -43,8 +43,8 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Set desktop to my favourite orange wallpaper
 osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"/Users/brodie/GitHub/dotfiles/macos/desktop.png\" as POSIX file"
 
-# Set accent to orange
-defaults write AppleAccentColor -int 1
+# Set accent to pink
+defaults write AppleAccentColor -int 6
 
 # Set tracking speed to fastest
 defaults write -g com.apple.mouse.scaling -float 3.0
