@@ -61,16 +61,14 @@ Sync the ~/Downloads folder to iCloud
 
 ```bash
 sudo rm -rf ~/Downloads && \
-sudo ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads ~/Downloads
+sudo ln -s "$ICLOUD_DOWNLOADS" ~/Downloads
 ```
 
 Set our defaults
 
 ```bash
-duti -s com.microsoft.VSCode json all && duti -s com.microsoft.VSCode svg all
+duti -s com.sublimetext.4 json all && duti -s com.sublimetext.4 svg all && duti -s com.sublimetext.4 plist all && duti -s com.sublimetext.4 txt all && duti -s com.sublimetext.4 md all && duti -s com.sublimetext.4 rtf all && duti -s com.sublimetext.4 js all && duti -s com.sublimetext.4 ts all && duti -s com.sublimetext.4 css all && duti -s com.sublimetext.4 xml all && duti -s com.sublimetext.4 yml all && duti -s com.sublimetext.4 yaml all
 ```
-
-[Turn on Settings Sync in Visual Studio Code](https://code.visualstudio.com/docs/editor/settings-sync)
 
 And finally, configure macOS ([list of macOS programmatically configurable options](https://macos-defaults.com))
 

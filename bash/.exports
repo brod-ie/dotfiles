@@ -1,4 +1,5 @@
 export ANDROID_HOME=$HOME/Android/Sdk
+export ICLOUD_DOWNLOADS="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Downloads"
 
 # The top-most paths override here.
 PATH=/opt/homebrew/bin
@@ -16,7 +17,7 @@ PATH=$PATH:$ANDROID_HOME/tools/bin
 PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH
 
-export EDITOR="code -w"
+export EDITOR="subl -w"
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
