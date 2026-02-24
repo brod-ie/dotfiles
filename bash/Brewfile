@@ -40,13 +40,14 @@ brew 'firebase-cli'
 cask 'google-cloud-sdk'
 brew 'openjdk@11'
 cask 'ngrok'
+brew 'tmux'
+brew 'terminal-notifier'
+cask 'tailscale'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
 mas 'Amphetamine', id: 937984704
 mas 'Magnet', id: 441258766
-mas '1Password for Safari', id: 1569813296
-mas 'AdGuard for Safari', id: 1440147259
 mas 'Dark Night', id: 1592844577
 mas 'Microsoft Word', id: 462054704
 mas 'Microsoft Excel', id: 462058435
