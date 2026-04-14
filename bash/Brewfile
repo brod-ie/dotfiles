@@ -43,6 +43,7 @@ cask 'ngrok'
 brew 'tmux'
 brew 'terminal-notifier'
 cask 'tailscale'
+cask 'betterdisplay'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
