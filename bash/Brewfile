@@ -44,6 +44,7 @@ brew 'tmux'
 brew 'terminal-notifier'
 cask 'tailscale'
 cask 'betterdisplay'
+brew 'ffmpeg'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
