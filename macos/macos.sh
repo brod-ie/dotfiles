@@ -181,6 +181,9 @@ defaults write com.apple.dt.Xcode "ShowBuildOperationDuration" -bool "true"
 # Dock, Dashboard, Mission Control, and hot corners                           #
 ###############################################################################
 
+# Empty dock
+defaults delete com.apple.dock persistent-apps
+
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
 
