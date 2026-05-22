@@ -275,4 +275,25 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Transmission" "Tweetbot" "Twitter" "iCal"; do
 	killall "${app}" &> /dev/null
 done
+
+###############################################################################
+# Keyboard shortcuts                                                          #
+###############################################################################
+
+# Disable Spotlight keyboard shortcut
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
+  -c "Delete :AppleSymbolicHotKeys:64" \
+  -c "Add :AppleSymbolicHotKeys:64:enabled bool false" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters array" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 65535" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 49" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 1048576" \
+  -c "Add :AppleSymbolicHotKeys:64:type string standard" 2>/dev/null
+
+# Activate changes
+/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+
+# Reset caching
+killall cfprefsd
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
