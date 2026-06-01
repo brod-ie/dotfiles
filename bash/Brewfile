@@ -46,6 +46,7 @@ cask 'tailscale'
 cask 'betterdisplay'
 brew 'ffmpeg'
 cask 'utm'
+cask 'superset'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
