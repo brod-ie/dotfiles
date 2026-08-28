@@ -1,4 +1,4 @@
-export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
 export ICLOUD_DOWNLOADS="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Downloads"
 
@@ -13,8 +13,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/bin:/usr/sbin
 PATH=$PATH:/sbin
 PATH=$PATH:$ANDROID_HOME/emulator
-PATH=$PATH:$ANDROID_HOME/tools
-PATH=$PATH:$ANDROID_HOME/tools/bin
+PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH
 

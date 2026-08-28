@@ -38,6 +38,7 @@ cask 'utm'
 cask 'superset'
 brew 'stripe-cli'
 brew 'git-lfs'
+cask 'android-studio'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
