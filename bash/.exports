@@ -1,4 +1,5 @@
 export ANDROID_HOME=$HOME/Android/Sdk
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home
 export ICLOUD_DOWNLOADS="$HOME/Library/Mobile Documents/com~apple~CloudDocs/Downloads"
 
 # The top-most paths override here.
@@ -7,7 +8,7 @@ PATH=$PATH:~/.rbenv/shims
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:$HOME/.fastlane/bin
 PATH=$PATH:$HOME/.rbenv/bin
-PATH=$PATH:/opt/homebrew/opt/openjdk@21/bin
+PATH=$PATH:$JAVA_HOME/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/bin:/usr/sbin
 PATH=$PATH:/sbin
