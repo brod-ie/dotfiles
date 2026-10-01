@@ -35,10 +35,10 @@ brew 'openjdk@21'
 cask 'betterdisplay'
 brew 'ffmpeg'
 cask 'utm'
-cask 'superset'
 brew 'stripe-cli'
 brew 'git-lfs'
 cask 'android-studio'
+cask 'openwhispr'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
@@ -49,5 +49,5 @@ mas 'Microsoft Excel', id: 462058435
 mas 'WhatsApp', id: 310633997
 mas 'Xcode', id: 497799835
 mas 'NordVPN: VPN Fast & Secure', id: 905953485
-mas 'OurCal: Group Calendar Share', id: 6461773071
+mas 'OurCal Calendar Messenger', id: 6461773071
 mas 'Streaks', id: 963034692
