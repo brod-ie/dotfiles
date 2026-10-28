@@ -22,7 +22,7 @@ export EDITOR="subl -w"
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] \$ "
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
-export CLOUDSDK_PYTHON=/opt/homebrew/opt/python@3.13/libexec/bin/python
+export CLOUDSDK_PYTHON=/opt/homebrew/bin/python3
 
 # Always start NVM to ensure correct version of Node/NPM
 export NVM_DIR=~/.nvm
