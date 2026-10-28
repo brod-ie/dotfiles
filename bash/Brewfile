@@ -42,6 +42,7 @@ cask 'android-studio'
 cask 'openwhispr'
 brew 'mobile-dev-inc/tap/maestro'
 brew 'go'
+cask 'grok-bot'
 
 mas 'Vivid', id: 6443470555
 mas 'Due', id: 524373870
